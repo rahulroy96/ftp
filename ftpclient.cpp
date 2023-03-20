@@ -65,7 +65,7 @@ int main(int argc, char const* argv[])
             break;
         }
 
-        printf("command = %s, filename - %s", command.c_str(), filename.c_str());
+        printf("command = %s, filename - %s\n", command.c_str(), filename.c_str());
 
         send(sock, input.c_str(), input.length(), 0);
         printf("Command message sent\n");
